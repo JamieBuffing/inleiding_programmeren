@@ -12,6 +12,7 @@ body{
     height: 20vh;
     background-color: grey;
     padding: 1%;
+    border-bottom-right-radius: 2vw;
 }
 #meldingen {
     position: absolute;
