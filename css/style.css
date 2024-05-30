@@ -2,26 +2,81 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
   }
 body{
-    background-color: beige;
+    background-color: #F2F2F0;
+    background-image: radial-gradient(black 1px, transparent 0);
+    background-size: 20px 20px;
+    background-position: 19px 5px;
 }
 #info {
     position: absolute;
     width: 30vw;
     height: 20vh;
-    background-color: beige;
+    background-color: #F2F2F0;
     padding: 1%;
     border-bottom-right-radius: 2vw;
-    border-style: none dotted dotted none;
+    border-style: none solid solid none;
+}
+#titel {
+    border-style: solid;
+    height: 40%;
+}
+#voornaam {
+    margin-top: 1%;
+    font-size: large;
+}
+#naam {
+    position: absolute;
+}
+#budgeto1 {
+    font-size: 125%;
+    margin-top: 10%;
+    margin-left: 10%;
+    padding: 1%;
+    border-color: black;
+    border-width: 0.5vh;
+    border-radius: 1vh;
+}
+#budgeto1:hover, #budgeto2:hover, #budgeto3:hover, #budgeto4:hover, #sluitknop:hover  {
+    box-shadow: 1px 1px 1px 1px grey;
+}
+#budgeto2 {
+    font-size: 125%;
+    padding: 1%;
+    border-color: cadetblue;
+    border-width: 0.5vh;
+    border-radius: 1vh;
+}
+#budgeto3 {
+    font-size: 125%;
+    padding: 1%;
+    border-color: black;
+    border-width: 0.5vh;
+    border-radius: 1vh;
+}
+#budgeto4 {
+    font-size: 125%;
+    padding: 1%;
+    border-color: black;
+    border-width: 0.5vh;
+    border-radius: 1vh;
+}
+#sluitknop{
+    font-size: 125%;
+    padding: 1%;
+    border-color: black;
+    border-width: 0.5vh;
+    border-radius: 1vh;
 }
 #meldingen {
     position: absolute;
     width: 70vw;
     height: 7vh;
     left: 30vw;
-    background-color: beige;
-    border-style: none none dotted none;
+    background-color: #F2F2F0;
+    border-style: none none solid none;
     padding: 1%;
 }
 #options {
@@ -29,17 +84,140 @@ body{
     top: 20vh;
     width: 25vw;
     height: 80vh;
-    background-color: beige;
-    border-style: none dotted dotted none;
+    background-color: #F2F2F0;
+    border-style: none solid solid none;
     padding: 2%;
-    
+    overflow-y: scroll;
 }
 #selectieWeergeven {
+    text-align: center;
     position: absolute;
     background-color: darkgray;
-    width: 50vw;
-    height: 10vh;
+    width: 20vw;
+    height: 8vh;
     margin-top: 10vh;
-    margin-left: 40vw;
+    margin-left: 31vw;
     padding: 1%;
+    border-radius: 1vw;
+    border: solid;
 }
+#printKnop {
+    text-align: center;
+    position: absolute;
+    background-color: darkgray;
+    width: 20vw;
+    height: 8vh;
+    margin-top: 10vh;
+    margin-left: 56vw;
+    padding: 1%;
+    border-radius: 1vw;
+    border: solid;
+    font-size: large;
+    font-weight: bold;
+}
+#printKnop:hover {
+    background-color: aquamarine;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+#popup1 {
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(000, 000, 000, 0.8);
+}
+#pm {
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    background-color: antiquewhite;
+    border-color: black;
+    border-style: solid;
+    border-radius: 3vw;
+    margin-left: 25%;
+    margin-top: 10%;
+    text-align: center;   
+}
+#print_tekst {
+    visibility: hidden;
+    width: 25vw;
+    height: 70vh;
+    border-style: solid;
+    position: absolute;
+    margin-left: 5vw;
+    margin-top: 21vh;
+}
+#padding_PT {
+    padding: 3%;
+}
+#afbeelding {
+    width: 65vw;
+    height: 70vh;
+    border-style: solid;
+    position: absolute;
+    margin-left: 30vw;
+    margin-top: 21vh;
+}
+#auto {
+    width: 80%;
+    position: absolute;
+    display: block;
+    margin-left: 10%;
+    margin-top: 16%;
+}
+#auto1 {
+    width: 80%;
+    position: absolute;
+    display: block;
+    margin-left: 10%;
+    margin-top: 16%;
+}
+#auto2 {
+    width: 80%;
+    position: absolute;
+    display: block;
+    margin-left: 10%;
+    margin-top: 16%;
+}
+#auto3 {
+    width: 80%;
+    position: absolute;
+    display: block;
+    margin-left: 10%;
+    margin-top: 16%;
+}
+#auto4 {
+    width: 80%;
+    position: absolute;
+    display: block;
+    margin-left: 10%;
+    margin-top: 16%;
+}
+
+#bar_binnen {
+    margin-top: 1vh;
+    margin-left: 5%;
+    width: 80%;
+    height: 3vh;
+    position: absolute;
+    background-color: aqua;
+    border-radius: 3vh;
+}
+
+@media print {
+    @page {
+        size: A5 landscape;
+        max-height: 100%;
+    }
+    body {
+      visibility: hidden;
+    }
+    #print_tekst {
+        visibility: visible;
+        position: absolute;
+    }
+    #afbeelding {
+      visibility: visible;
+      position: absolute;
+    }
+  }

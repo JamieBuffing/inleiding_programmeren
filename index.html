@@ -8,44 +8,91 @@
 </head>
 <body>
     <section id="info">
-        <h1>Naam</h1>
+        <section id="titel">
+            <input type="text" id="voornaam" name="voornaam">
+            <h1 id="naam">Naam</h1>
+        </section>
+        <button id="budgeto1">€500,-</button>
+        <button id="budgeto2">€1000,-</button>
+        <button id="budgeto3">€1500,-</button>
+        <button id="budgeto4">€2000,-</button>
     </section>
     <section id="meldingen">
         <p>meldingen</p>
+        <p id="lestest"></p>
     </section>
     <section id="options">
-        <h3>Opties</h3>
-        <p>Selecteer hier de opties voor op uw voertuig.</p>
+        <h3>Kleuren selectie</h3>
+        <p>Kies de kleuren voor uw voertuig.</p>
             <br>
-        <b>Selectie 1</b>
-        <p><input type="radio" id="L1_0" name="list1" checked>&nbsp; Geen</p>
-        <p><input type="radio" id="L1_1" name="list1">&nbsp; Optie1</p>
-        <p><input type="radio" id="L1_2" name="list1">&nbsp; Optie2</p>
-        <p><input type="radio" id="L1_3" name="list1">&nbsp; Optie3</p>
-        <p><input type="radio" id="L1_4" name="list1">&nbsp; Optie4</p>
-        <p><input type="radio" id="L1_5" name="list1">&nbsp; Optie5</p>
+        <b>Chassis kleur</b>
+        <p><input type="radio" id="L1_0" name="list1" checked>&nbsp; Wit [€0,-]</p>
+        <p><input type="radio" id="L1_1" name="list1">&nbsp; Blauw [€100,-]</p>
+        <p><input type="radio" id="L1_2" name="list1">&nbsp; Paars [€200,-]</p>
+        <p><input type="radio" id="L1_3" name="list1">&nbsp; Roze [€300,-]</p>
+        <p><input type="radio" id="L1_4" name="list1">&nbsp; Rood [€400,-]</p>
+        <p><input type="radio" id="L1_5" name="list1">&nbsp; Geel [€500,-]</p>
             <br>
-        <b>Selectie 2</b>
-        <p><input type="radio" id="L2_0" name="list2" checked>&nbsp; Geen</p>
-        <p><input type="radio" id="L2_1" name="list2">&nbsp; Optie1</p>
-        <p><input type="radio" id="L2_2" name="list2">&nbsp; Optie2</p>
-        <p><input type="radio" id="L2_3" name="list2">&nbsp; Optie3</p>
-        <p><input type="radio" id="L2_4" name="list2">&nbsp; Optie4</p>
-        <p><input type="radio" id="L2_5" name="list2">&nbsp; Optie5</p>
+        <b>Achtervleugel kleur</b>
+        <p><input type="radio" id="L2_0" name="list2" checked>&nbsp; Wit [€0,-]</p>
+        <p><input type="radio" id="L2_1" name="list2">&nbsp; Blauw [€100,-]</p>
+        <p><input type="radio" id="L2_2" name="list2">&nbsp; Paars [€200,-]</p>
+        <p><input type="radio" id="L2_3" name="list2">&nbsp; Roze [€300,-]</p>
+        <p><input type="radio" id="L2_4" name="list2">&nbsp; Rood [€400,-]</p>
+        <p><input type="radio" id="L2_5" name="list2">&nbsp; Geel [€500,-]</p>
             <br>
-        <b>Selectie 3</b>
-        <p><input type="radio" id="L3_0" name="list3" checked>&nbsp; Geen</p>
-        <p><input type="radio" id="L3_1" name="list3">&nbsp; Optie1</p>
-        <p><input type="radio" id="L3_2" name="list3">&nbsp; Optie2</p>
-        <p><input type="radio" id="L3_3" name="list3">&nbsp; Optie3</p>
-        <p><input type="radio" id="L3_4" name="list3">&nbsp; Optie4</p>
-        <p><input type="radio" id="L3_5" name="list3">&nbsp; Optie5</p>
+        <b>Wiel doppen kleur</b>
+        <p><input type="radio" id="L3_0" name="list3" checked>&nbsp; Wit [€0,-]</p>
+        <p><input type="radio" id="L3_1" name="list3">&nbsp; Blauw [€100,-]</p>
+        <p><input type="radio" id="L3_2" name="list3">&nbsp; Paars [€200,-]</p>
+        <p><input type="radio" id="L3_3" name="list3">&nbsp; Roze [€300,-]</p>
+        <p><input type="radio" id="L3_4" name="list3">&nbsp; Rood [€400,-]</p>
+        <p><input type="radio" id="L3_5" name="list3">&nbsp; Geel [€500,-]</p>
+        <br>
+        <b>Deur paneel kleur</b>
+        <p><input type="radio" id="L4_0" name="list4" checked>&nbsp; Wit [€0,-]</p>
+        <p><input type="radio" id="L4_1" name="list4">&nbsp; Baluw [€100,-]</p>
+        <p><input type="radio" id="L4_2" name="list4">&nbsp; Paars [€200,-]</p>
+        <p><input type="radio" id="L4_3" name="list4">&nbsp; Roze [€300,-]</p>
+        <p><input type="radio" id="L4_4" name="list4">&nbsp; Rood [€400,-]</p>
+        <p><input type="radio" id="L4_5" name="list4">&nbsp; Geel [€500,-]</p>
+        <br>
+        <b>Raam tint</b>
+        <p><input type="radio" id="L5_0" name="list5" checked>&nbsp; Geen tint [€0,-]</p>
+        <p><input type="radio" id="L5_1" name="list5">&nbsp; Grijs [€100,-]</p>
+        <p><input type="radio" id="L5_2" name="list5">&nbsp; Blauw [€200,-]</p>
+        <p><input type="radio" id="L5_3" name="list5">&nbsp; Paars [€300,-]</p>
+        <p><input type="radio" id="L5_4" name="list5">&nbsp; Rood [€400,-]</p>
+        <p><input type="radio" id="L5_5" name="list5">&nbsp; Geel [€500,-]</p>
     </section>
 
     <section id="selectieWeergeven">
-        <p>test</p>
+        <strong id="budget">Uw budget €1000,-</strong>
+    </section>
+        <button id="printKnop" onclick="window.print()">Print uw auto.</button>
+    <section id="print_tekst">
+        <p id="padding_PT">
+            Deze prachtige auto is gemaakt met car builder pro.
+        </p>
+    </section>
+    <section id="afbeelding">
+        <img id="auto" src="images/a.png">
+        <img id="auto1" src="images/g.png">
+        <img id="auto2" src="images/m.png">
+        <img id="auto3" src="images/s.png">
+        <img id="auto4" src="images/y.png">
     </section>
 
+    <section id="popup1">
+        <section id="pm">
+            <br>
+            <h2>Met deze optie komt u in de schulden te staan.</h2>
+            <br><br>
+            <p>Als u akkoord gaat geeft u aan het te begrijpen.</p>
+            <br>
+            <button id="sluitknop">Akkoord</button>
+        </section>
+    </section>
     <script src="js/script.js"></script>
 </body>
 </html>
