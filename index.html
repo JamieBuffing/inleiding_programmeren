@@ -3,24 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Car builder pro</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section id="info">
-        <section id="titel">
-            <input type="text" id="voornaam" name="voornaam">
-            <h1 id="naam">Naam</h1>
+    <!--het geluid als je op print klikt-->
+    <audio id="mijnAudio">
+        <source src="horn.mp3" type="audio/mp3">
+    </audio>
+    <!--De popup aan het begin die vraagt wat je voornaam is-->
+    <section id="popup2">
+        <section id="pm">
+            <p id="naamVraag">Wie maakt deze auto?</p>
+            <input id="voornaam" rows="1" cols="10" placeholder="Uw voornaam"></input>
+            <button id="voornaam" onclick="zoekWaarde()">Enter</button>
         </section>
+    </section>
+    <!--het titel stukje met de hoofdinformatie linksbovenin-->
+    <section id="info">
+    <!--de 5de popup die omhoog komt in de uitlegreeks
+    hier wordt aangegeven dat je je budget kan aanpassen-->
+        <section id="popup5">
+            <p>
+                En hier kunt u uw budget aanpassen.
+            </p>
+            <button id="close5" onclick="close5()">X</button>
+        </section>
+        <!--De naam die je hebt ingevuld komt hier bij te staan-->
+        <section id="titel">
+            <p id="naam1">De auto van: .......</p>
+        </section>
+        <!--de budget opties-->
         <button id="budgeto1">€500,-</button>
         <button id="budgeto2">€1000,-</button>
         <button id="budgeto3">€1500,-</button>
         <button id="budgeto4">€2000,-</button>
     </section>
+    <!--het volgende stukje helemaal bovenin het scherm met de meldingen-->
     <section id="meldingen">
-        <p>meldingen</p>
-        <p id="lestest"></p>
+        <p id="melding">meldingen...</p>
     </section>
+    <!--De opties aan de linkerkant van het scherm gesorteerd per categorie-->
     <section id="options">
         <h3>Kleuren selectie</h3>
         <p>Kies de kleuren voor uw voertuig.</p>
@@ -65,24 +88,50 @@
         <p><input type="radio" id="L5_4" name="list5">&nbsp; Rood [€400,-]</p>
         <p><input type="radio" id="L5_5" name="list5">&nbsp; Geel [€500,-]</p>
     </section>
-
+    <!--De ronde info box die je huidige budget weergeeft en hoeveel je daarvan nog over hebt-->
     <section id="selectieWeergeven">
         <strong id="budget">Uw budget €1000,-</strong>
     </section>
-        <button id="printKnop" onclick="window.print()">Print uw auto./test</button>
+    <!--Een soort gelijke box alleen kan je hier op klikken en dit heb ik als eigen onderzoek
+    opgezocht hoe je het zou kunnen exporteren en of printen-->
+        <button id="printKnop" onclick="window.print(); playAudio();">Print uw auto.</button>
+    <!--Dan een stukje met text en informatie die je alleen ziet als je op de print knop klikt-->
     <section id="print_tekst">
         <p id="padding_PT">
-            Deze prachtige auto is gemaakt met car builder pro.
+            <p id="naam2">naam</p><br>
+            Deze prachtige auto is ontworpen op Car builder pro<br>
+            <p id="printBudget">deze auto is ontworpen met maar €1000,-<br>
+            Hiervan is nog over:</p>
+            <p id="naam3">over</p>
         </p>
     </section>
+    <!--Het grote stuk met de afbeeldingen erin
+    Het is opgedeeld in 5 lagen van png afbeeldingen die bovenop elkaar liggen hierdoor
+    komt er uiteindelijk 1 afbeelding uit-->
     <section id="afbeelding">
+        <!--eerst nog een ander popup in de uitlegreeks die aangeeft dat je daar je
+        kleuren moet selecteren-->
+        <section id="popup3">
+            <p>
+                Kies hier uw kleuren selectie.
+            </p>
+            <button id="close3" onclick="close3()">X</button>
+        </section>
+    <!--De volgende popup die aangeeft dat je selectie daar wordt weer gegeven-->
+        <section id="popup4">
+            <p>
+                Hier ziet u uw selectie op het voetruig
+            </p>
+            <button id="close4" onclick="close4()">X</button>
+        </section>
+    <!--dan de lagen afbeeldingen-->
         <img id="auto" src="images/1_1.png">
         <img id="auto1" src="images/2_1.png">
         <img id="auto2" src="images/3_1.png">
         <img id="auto3" src="images/4_1.png">
         <img id="auto4" src="images/y.png">
     </section>
-
+    <!--de grote popup als je onder je budget komt-->
     <section id="popup1">
         <section id="pm">
             <br>
