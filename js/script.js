@@ -166,102 +166,102 @@ function l5 (value) {
 }
 function f1_0 () {
     l1 (0)
-    document.getElementById('auto').src='images/A.png'
+    document.getElementById('auto').src='images/1_1.png'
 }
 function f1_1 () {
     l1 (100)
-    document.getElementById('auto').src='images/B.png'
+    document.getElementById('auto').src='images/1_2.png'
 }
 function f1_2 () {
     l1 (200)
-    document.getElementById('auto').src='images/D.png'
+    document.getElementById('auto').src='images/1_3.png'
 }
 function f1_3 () {
     l1 (300)
-    document.getElementById('auto').src='images/D.png'
+    document.getElementById('auto').src='images/1_4.png'
 }
 function f1_4 () {
     l1 (400)
-    document.getElementById('auto').src='images/E.png'
+    document.getElementById('auto').src='images/1_5.png'
 }
 function f1_5 () {
     l1 (500)
-    document.getElementById('auto').src='images/F.png'
+    document.getElementById('auto').src='images/1_6.png'
 }
 
 function f2_0 () {
     l2 (0)
-    document.getElementById('auto1').src='images/g.png'
+    document.getElementById('auto1').src='images/2_1.png'
 }
 function f2_1 () {
     l2 (100)
-    document.getElementById('auto1').src='images/H.png'
+    document.getElementById('auto1').src='images/2_2.png'
 }
 function f2_2 () {
     l2 (200)
-    document.getElementById('auto1').src='images/I.png'
+    document.getElementById('auto1').src='images/2_3.png'
 }
 function f2_3 () {
     l2 (300)
-    document.getElementById('auto1').src='images/J.png'
+    document.getElementById('auto1').src='images/2_4.png'
 }
 function f2_4 () {
     l2 (400)
-    document.getElementById('auto1').src='images/Kpng'
+    document.getElementById('auto1').src='images/2_5.png'
 }
 function f2_5 () {
     l2 (500)
-    document.getElementById('auto1').src='images/L.png'
+    document.getElementById('auto1').src='images/2_6.png'
 }
 
 function f3_0 () {
     l3 (0)
-    document.getElementById('auto2').src='images/m.png'
+    document.getElementById('auto2').src='images/3_1.png'
 }
 function f3_1 () {
     l3 (100)
-    document.getElementById('auto2').src='images/N.png'
+    document.getElementById('auto2').src='images/3_2.png'
 }
 function f3_2 () {
     l3 (200)
-    document.getElementById('auto2').src='images/O.png'
+    document.getElementById('auto2').src='images/3_3.png'
 }
 function f3_3 () {
     l3 (300)
-    document.getElementById('auto2').src='images/P.png'
+    document.getElementById('auto2').src='images/3_4.png'
 }
 function f3_4 () {
     l3 (400)
-    document.getElementById('auto2').src='images/Q.png'
+    document.getElementById('auto2').src='images/3_5.png'
 }
 function f3_5 () {
     l3 (500)
-    document.getElementById('auto2').src='images/R.png'
+    document.getElementById('auto2').src='images/3_6.png'
 }
 
 function f4_0 () {
     l4 (0)
-    document.getElementById('auto3').src='images/s.png'
+    document.getElementById('auto3').src='images/4_1.png'
 }
 function f4_1 () {
     l4 (100)
-    document.getElementById('auto3').src='images/T.png'
+    document.getElementById('auto3').src='images/4_2.png'
 }
 function f4_2 () {
     l4 (200)
-    document.getElementById('auto3').src='images/u.png'
+    document.getElementById('auto3').src='images/4_3.png'
 }
 function f4_3 () {
     l4 (300)
-    document.getElementById('auto3').src='images/V.png'
+    document.getElementById('auto3').src='images/4_4.png'
 }
 function f4_4 () {
     l4 (400)
-    document.getElementById('auto3').src='images/W.png'
+    document.getElementById('auto3').src='images/4_5.png'
 }
 function f4_5 () {
     l4 (500)
-    document.getElementById('auto3').src='images/X.png'
+    document.getElementById('auto3').src='images/4_6.png'
 }
 
 function f5_0 () {
